@@ -18,6 +18,9 @@ public class BlogsController : Controller
         _userManager = userManager;
     }
 
+    //like repo
+    //comment repo
+
     [HttpGet]
     public async Task<IActionResult> Index(string urlHandle)
     {
