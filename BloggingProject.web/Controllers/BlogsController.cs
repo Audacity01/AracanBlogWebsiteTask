@@ -23,8 +23,6 @@ public class BlogsController : Controller
         _blogPostCommentRepository = blogPostCommentRepository;
     }
 
-    //comment repo
-
     [HttpGet]
     public async Task<IActionResult> Index(string urlHandle)
     {
