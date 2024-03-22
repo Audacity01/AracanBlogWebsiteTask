@@ -1,11 +1,9 @@
-﻿namespace BloggingProject.web.Models.Domain
+﻿namespace BloggingProject.web.Models.ViewModels
 {
-    public class Tag
+    public class EditTagRequest
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string DisplayName { get; set; }
-
-        public ICollection<BlogPost> BlogPosts { get; set; }
     }
 }
