@@ -1,4 +1,4 @@
-﻿@model Blog.Web.Models.ViewModels.AddBlogPostRequest
+﻿@model BloggingProject.web.Models.ViewModels.AddBlogPostRequest
 @{
     ViewData["Title"] = "Add a new BlogPost";
 }
@@ -92,8 +92,7 @@
         const featuredImageUrlElement = document.getElementById('featuredImageUrl');
         const featuredImageDisplayElement = document.getElementById('featuredImageDisplay');
 
-        async function uploadFeaturedImage(e)
-        {
+        async function uploadFeaturedImage(e) {
             console.log(e.target.files[0]);
 
             let data = new FormData();
@@ -103,15 +102,15 @@
                 method: 'POST',
                 headers: {
                     'Accept': '*/*',
-                    },
-                    body: data
-                    }).then(response => response.json())
-                        .then(result => {
-                            featuredImageUrlElement.value = result.link;
-                            featuredImageDisplayElement.src = result.link;
-                            featuredImageDisplayElement.style.display = 'block';
-                            featuredImageDisplayElement.style.width = '300px';
-                        });
+                },
+                body: data
+            }).then(response => response.json())
+                .then(result => {
+                    featuredImageUrlElement.value = result.link;
+                    featuredImageDisplayElement.src = result.link;
+                    featuredImageDisplayElement.style.display = 'block';
+                    featuredImageDisplayElement.style.width = '300px';
+                });
         }
 
         featuredImageUploadElement.addEventListener('change', uploadFeaturedImage);
