@@ -104,11 +104,12 @@ namespace BloggingProject.web.Controllers
                 //show success notification
                 return RedirectToAction("List");
             }
-            //show an error notification
+
             return RedirectToAction("Edit", new { id = editTagRequest.Id });
         }
 
 
+        //method to validate Add Tag Request
         private void ValidateAddTagRequest(AddTagRequest addTagRequest)
         {
             if (addTagRequest.Name is not null && addTagRequest.DisplayName is not null)
