@@ -1,48 +1,38 @@
-﻿@model IEnumerable<BloggingProject.web.Models.Domain.BlogPost>
+﻿@model IEnumerable<BloggingProject.web.Models.Domain.Tag>
 @{
-    ViewData["Title"] = "List of BlogPosts";
+    ViewData["Title"] = "All tags list";
 }
 
 <div class="bg-secondary bg-opacity-10 py-2">
     <div class="container">
-        <h1>All BlogPost - Admin Functionality</h1>
+        <h1>Show All Tags - Admin Functionality</h1>
     </div>
 </div>
 
 <div class="container py-5">
-    @if (@Model != null && Model.Any())
+    @if (Model != null && Model.Any())
     {
         <table class="table">
             <thead>
                 <tr>
-                    <td>Id</td>
-                    <td>Heading</td>
-                    <td>Tags</td>
-                    <td>Actions</td>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>DisplayName</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
-
             <tbody>
-                @foreach (var blogPost in Model)
+                @foreach (var tag in Model)
                 {
                     <tr>
-                        <td>@blogPost.Id</td>
-                        <td>@blogPost.Heading</td>
-                        <td>
-                            <div class="d-flex">
-                                @foreach (var tag in blogPost.Tags)
-                                {
-                                    <span class="badge bg-secondary me-1">@tag.Name</span>
-                                }
-                            </div>
-                        </td>
+                        <td>@tag.Id</td>
+                        <td>@tag.Name</td>
+                        <td>@tag.DisplayName</td>
                         <td>
                             <a asp-area=""
-                               asp-controller="AdminBlogPosts"
+                               asp-controller="AdminTags"
                                asp-action="Edit"
-                               asp-route-id="@blogPost.Id">
-                                Edit
-                            </a>
+                               asp-route-id="@tag.Id">Edit</a>
                         </td>
                     </tr>
                 }
@@ -51,7 +41,6 @@
     }
     else
     {
-        <p>No Blog Posts found!</p>
+        <p>No tags found!</p>
     }
-
-</div>
+</div> </div>

@@ -1,6 +1,6 @@
 ﻿using BloggingProject.web.Models.Domain;
 
-namespace Blog.Web.Repositories;
+namespace BloggingProject.web.Repositories;
 
 public interface IBlogPostCommentRepository
 {

@@ -3,7 +3,7 @@ using BloggingProject.web.Models.Domain;
 using BloggingProject.web.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace Blog.Web.Repositories;
+namespace BloggingProject.web.Repositories;
 
 public class BlogPostLikeRepository : IBlogPostLikeRepository
 {

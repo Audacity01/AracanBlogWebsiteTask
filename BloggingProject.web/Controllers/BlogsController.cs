@@ -1,7 +1,6 @@
-﻿using Blog.Web.Repositories;
+﻿using BloggingProject.web.Repositories;
 using BloggingProject.web.Models.Domain;
 using BloggingProject.web.Models.ViewModels;
-using BloggingProject.web.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
