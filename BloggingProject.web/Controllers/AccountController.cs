@@ -21,7 +21,7 @@ public class AccountController : Controller
         return View();
     }
 
-    [HttpPost]
+    [HttpGet]
     public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
     {
         if (ModelState.IsValid)
