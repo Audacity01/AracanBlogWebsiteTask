@@ -1,10 +1,12 @@
 ﻿using BloggingProject.web.Models.ViewModels;
 using BloggingProject.web.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BloggingProject.web.Controllers;
 
+[Authorize(Roles = "Admin")]
 public class AdminUsersController : Controller
 {
     private readonly IUserRepository _userRepository;
