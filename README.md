@@ -22,7 +22,7 @@
   <p align="center">
     A simple blogging project utilizing .NET MVC 
     <br />
-    <a href="https://github.com/Audacity01/AracanBlogWebsiteTask><strong>Explore the docs »</strong></a>
+</a>
     <br />
     <br />
     <a href="https://github.com/Audacity01/AracanBlogWebsiteTask">View Demo</a>
@@ -55,7 +55,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
