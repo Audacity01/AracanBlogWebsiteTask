@@ -35,6 +35,11 @@ public class AdminBlogPostsController : Controller
     [HttpPost]
     public async Task<IActionResult> Add(AddBlogPostRequest addBlogPostRequest)
     {
+        //provdies a static image if no image is uploaded
+        if(addBlogPostRequest.FeaturedImageUrl == null)
+        {
+            addBlogPostRequest.FeaturedImageUrl = "https://images.pexels.com/photos/14608973/pexels-photo-14608973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+        }
         //map view model to domain model
         var blogPost = new BlogPost()
         {
