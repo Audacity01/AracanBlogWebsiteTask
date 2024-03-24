@@ -173,7 +173,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Name - [Vaibhav Joshi](https://twitter.com/Fsociety_vj) - email: vaibjo.2001@gmail.com.com
+Name - [Vaibhav Joshi](https://twitter.com/Fsociety_vj) - email: vaibjo.2001@gmail.com
 
 Project Link: [https://github.com/Audacity01/AracanBlogWebsiteTask](https://github.com/Audacity01/AracanBlogWebsiteTask)
 
