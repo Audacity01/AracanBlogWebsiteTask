@@ -20,12 +20,12 @@
                     
             <div class="mb-3">
                 <label class="form-label">Heading</label>
-                <input type="text" class="form-control" id="heading" asp-for="Heading"/>
+                <input type="text" class="form-control" id="heading" asp-for="Heading" required/>
             </div>
             
             <div class="mb-3">
                 <label class="form-label">Page Title</label>
-                <input type="text" class="form-control" id="pageTitle" asp-for="PageTitle"/>
+                <input type="text" class="form-control" id="pageTitle" asp-for="PageTitle" required />
             </div>
                     
             <div class="mb-3">
@@ -35,7 +35,7 @@
             
             <div class="mb-3">
                 <label class="form-label">Short Description</label>
-                <input type="text" class="form-control" id="shortDescription" asp-for="ShortDescription" />
+                <input type="text" class="form-control" id="shortDescription" asp-for="ShortDescription" required />
             </div>
             
             <div class="mb-3">
@@ -58,17 +58,17 @@
             
             <div class="mb-3">
                 <label class="form-label">URL Handle</label>
-                <input type="text" class="form-control" id="urlHandle" asp-for="UrlHandle" />
+                <input type="text" class="form-control" id="urlHandle" asp-for="UrlHandle" required />
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Published Date</label>
-                <input type="date" class="form-control" id="publishedDate" asp-for="PublishedDate" value="@DateOnly.Parse(DateTime.Now.ToString("yyyy-MM-dd")).ToString("yyyy-MM-dd")" />
+                <input type="date" class="form-control" id="publishedDate" asp-for="PublishedDate" />
             </div>
             
             <div class="mb-3">
                 <label class="form-label">Author</label>
-                <input type="text" class="form-control" id="author" asp-for="Author" />
+                <input type="text" class="form-control" id="author" asp-for="Author" required />
             </div>
             
             <div class="form-check mb-3">
