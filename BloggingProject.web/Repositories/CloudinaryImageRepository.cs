@@ -22,6 +22,10 @@ namespace BloggingProject.web.Repositories
 
         public async Task<string> UploadAsync(IFormFile formFile)
         {
+            if(formFile == null)
+            {
+                return "-1";
+            }
             var client = new Cloudinary(_account);
 
             var uploadParams = new ImageUploadParams()

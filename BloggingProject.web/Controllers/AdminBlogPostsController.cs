@@ -38,7 +38,7 @@ public class AdminBlogPostsController : Controller
         //provdies a static image if no image is uploaded
         if(addBlogPostRequest.FeaturedImageUrl == null)
         {
-            addBlogPostRequest.FeaturedImageUrl = "https://images.pexels.com/photos/14608973/pexels-photo-14608973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+            addBlogPostRequest.FeaturedImageUrl = "-1";
         }
         //map view model to domain model
         var blogPost = new BlogPost()
