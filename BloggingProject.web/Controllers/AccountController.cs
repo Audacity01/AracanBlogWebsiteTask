@@ -16,12 +16,12 @@ public class AccountController : Controller
     }
 
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Register()
     {
         return View();
     }
 
-    [HttpGet]
+    [HttpPost]
     public async Task<IActionResult> Register(RegisterViewModel registerViewModel)
     {
         if (ModelState.IsValid)
